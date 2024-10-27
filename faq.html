@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>FAQ Page</title>
+</head>
+<body>
+    <header>
+        <div class="logo">NurTravel</div>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/Admin/Documents/NewNurTravel.html">Home</a></li>
+                <li><a href="file:///C:/Users/Admin/Documents/About%20Us.html">About Us</a></li>
+                <li><a href="file:///C:/Users/Admin/Documents/Contact%20Us.html">Contact Us</a></li>
+                <li><a href="file:///C:/Users/Admin/Documents/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="faq-container">
+        <div class="faq-text">
+            <h1>Any questions? <br> We got you. </h1>
+            <h4>Feel free to reach out with any inquiries! We're here to assist you with any questions or concerns you may have. Our dedicated team is ready to provide the support you need to make your experience enjoyable and hassle-free.</h4>
+            <button id="changeColorBtn">Change Background Color</button>
+            <button id="toggleModeBtn">Toggle Dark/Light Mode</button>
+            <div class="auth-container">
+                <h2>Login</h2>
+                <input type="text" id="username" placeholder="Username" required>
+                <button id="loginBtn">Login</button>
+                <button id="logoutBtn" style="display:none;">Logout</button>
+                <p id="loginMessage"></p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">Question 1?</div>
+                <div class="accordion-content">Answer to question 1.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Question 2?</div>
+                <div class="accordion-content">Answer to question 2.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Question 3?</div>
+                <div class="accordion-content">Answer to question 3.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Question 4?</div>
+                <div class="accordion-content">Answer to question 4.</div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-container"> 
+        <h1> Subscribe to be the first to know about the latest news! </h1>
+    <button id="subscribeBtn" class="btn-open-popup" onclick="togglePopup()">
+        Subscribe
+    </button>    
+</div>
+    <div id="popupOverlay" class="overlay-container">
+        <div class="popup-box">
+            <h2 style="color: pink;">Popup Form</h2>
+            <form class="form-container">
+                <label class="form-label" for="name">Username:</label>
+                <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>
+
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required>
+
+                <button class="btn-submit" type="submit">Submit</button>
+            </form>
+
+            <button class="btn-close-popup" onclick="togglePopup()">Close</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>Contact: nurpeijszulkarnaj@gmail.com | Phone: +77478415230</p> 
+        <p id="currentDateTime"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
